@@ -1,12 +1,17 @@
-console.log ("Hola Mundo");
+// Variable tipo texto
+let nombre = "Carlos";
 
-function Suma (a,b){
-    return a+b;
-}
+// Variable tipo número entero
+let edad = 20;
 
-let a;
-var b;
-a=10;
-b=20;
-let suma=Suma(a,b);
- console.log("La suma es "+ suma);
+// Variable tipo decimal
+let promedio = 9.5;
+
+// Variable tipo booleano
+let aprobado = true;
+
+// Mostrar resultados en consola
+console.log("Nombre: " + nombre);
+console.log("Edad: " + edad);
+console.log("Promedio: " + promedio);
+console.log("¿Aprobado?: " + aprobado);
