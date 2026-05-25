@@ -5,7 +5,7 @@
 //**************************************************
 
 //######## Ejemplo 1: Filtrar números pares
-
+console.log("Ejemplo 1: Filtrar números pares");
 const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Solo pasan los números cuyo residuo al dividir entre 2 sea cero
@@ -17,7 +17,7 @@ console.log(pares);
 
 
 //######## Ejemplo 2: Filtrar palabras cortas
-
+console.log("\nEjemplo 2: Filtrar palabras cortas");
 const palabras = ["js", "javascript", "html", "css", "ecmascript"];
 
 // Solo dejamos pasar las palabras con más de 4 caracteres
@@ -32,7 +32,7 @@ console.log(palabrasLargas);
 //**************************************************
 
 //######## Ejemplo 3: Filtrar por propiedades booleanas (Estado)
-
+console.log("\nEjemplo 3: Filtrar por propiedades booleanas (Estado)");
 const usuarios = [
     { nombre: "Tomás", activo: true },
     { nombre: "Ana", activo: false },
@@ -55,6 +55,7 @@ console.log(usuariosActivos);
 
 
 //######## Ejemplo 4: Filtrado por rangos numéricos (Buscador de productos)
+console.log("\nEjemplo 4: Filtrado por rangos numéricos (Buscador de productos)");
 const productos = [
     { nombre: "Teclado", precio: 45 },
     { nombre: "Monitor", precio: 300 },
@@ -72,7 +73,7 @@ console.log(economicos);
 
 
 //######## Ejemplo 5: Coincidencia parcial de texto
-
+console.log("\nEjemplo 5: Coincidencia parcial de texto");
 const libros = ["Eloquent JavaScript", "Clean Code", "JavaScript: The Good Parts", "You Don't Know JS"];
 const busqueda = "code";
 
@@ -91,7 +92,7 @@ console.log(librosEncontrados);
 //**************************************************
 
 //######## Ejemplo 6: Filtrado con múltiples condiciones dinámicas
-
+console.log("\nEjemplo 6: Filtrado con múltiples condiciones dinámicas");
 const inventario = [
     { tipo: "consola", marca: "Sony", precio: 500 },
     { tipo: "accesorio", marca: "Sony", precio: 70 },
@@ -110,12 +111,12 @@ console.log(accesoriosBaratos);
 
 
 //######## Ejemplo 7: Eliminar elementos duplicados en un Array
-
+console.log("\nEjemplo 7: Eliminar elementos duplicados en un Array");
 const numerosRepetidos = [1, 2, 3, 1, 4, 2, 5, 3];
 
 // .indexOf() siempre devuelve la PRIMERA posición donde encuentra un elemento.
 // Si el índice actual NO coincide con su primera aparición, significa que es un duplicado.
-const numerosUnicos = numerosRepetidos.filter((num, index, array original) => {
+const numerosUnicos = numerosRepetidos.filter((num, index, arrayOriginal) => {
     return arrayOriginal.indexOf(num) === index;
 });
 
@@ -125,7 +126,7 @@ console.log(numerosUnicos);
 
 
 //######## Ejemplo 8: Sanitización de datos (Limpieza de valores "Falsy")
-
+console.log("\nEjemplo 8: Sanitización de datos (Limpieza de valores 'Falsy')");
 const datosSucios = ["Tomás", null, "Ana", undefined, "", "Pedro", false];
 
 // Al pasar la función constructora Boolean como callback, 
