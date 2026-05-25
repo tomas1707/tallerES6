@@ -1,2 +1,0 @@
-//Métodos Get y Set
-
